@@ -1,0 +1,278 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent;
+    transition: background-color 0.5s, color 0.5s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.navbar.white {
+    background-color: white;
+}
+
+.navbar.white a {
+    color: white;
+}
+
+.navbar-left {
+    flex: 1;
+}
+
+.navbar-right {
+    flex: 1;
+    text-align: right;
+}
+
+.navbar-title {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.navbar-right a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.content {
+    padding: 100vh 20px; 
+}
+
+
+
+.newsletters-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #061429;
+    padding: 40px;
+}
+
+.newsletter-content {
+    flex: 1;
+}
+
+.newsletter-heading {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.newsletter-text {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.newsletter-form {
+    display: flex;
+    align-items: center;
+}
+
+.email-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.submit-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.custom-quick-links {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #343a40;
+    border-radius: 5px;
+}
+
+.quick-links-title {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.quick-link {
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.quick-link i {
+    margin-right: 8px;
+    color: #007bff;
+}
+
+.quick-link:hover {
+    color: #007bff;
+}
+
+@media (min-width: 767.98px) {
+    .footer-about {
+        margin-bottom: -75px;
+    }
+}
+.featured-products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.product-card {
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 10px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    max-height: 250px; 
+    object-fit: cover;
+    
+}
+
+.product-card h4 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+.templates-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.templates-heading {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.template-card {
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 15px 30px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    flex: 1 1 calc(33.33% - 30px);
+    max-width: calc(33.33% - 30px);
+}
+
+.template-card img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.template-card h4 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.template-card p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.template-card:hover {
+    transform: translateY(-5px);
+}
+
+.custom-footer {
+    background-color: #061429;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.custom-footer-content {
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.custom-footer-content a {
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    transition: border-color 0.3s;
+    padding: 5px;
+}
+
+.custom-footer-content a:hover {
+    border-color: transparent;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.custom-footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+}
